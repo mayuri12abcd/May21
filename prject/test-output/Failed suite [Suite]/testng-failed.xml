@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="temptest.AmazonTng1">
+        <methods>
+          <include name="gotoCart"/>
+          <include name="selectVivo"/>
+          <include name="closeBrowser"/>
+          <include name="createPOMobjects"/>
+          <include name="cleanPOMobjects"/>
+          <include name="selectOppo"/>
+          <include name="launchBrowser"/>
+          <include name="openMobile"/>
+        </methods>
+      </class> <!-- temptest.AmazonTng1 -->
+      <class name="temptest.AmazonTng2">
+        <methods>
+          <include name="pursecolorChoose"/>
+          <include name="openPurse"/>
+          <include name="cleanPOMobjects"/>
+          <include name="afterMethod"/>
+          <include name="createPOMobjects"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- temptest.AmazonTng2 -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="temptest.AmazonTng1">
+        <methods>
+          <include name="gotoCart"/>
+          <include name="selectVivo"/>
+          <include name="closeBrowser"/>
+          <include name="createPOMobjects"/>
+          <include name="cleanPOMobjects"/>
+          <include name="selectOppo"/>
+          <include name="launchBrowser"/>
+          <include name="openMobile"/>
+        </methods>
+      </class> <!-- temptest.AmazonTng1 -->
+      <class name="temptest.AmazonTng2">
+        <methods>
+          <include name="pursecolorChoose"/>
+          <include name="openPurse"/>
+          <include name="cleanPOMobjects"/>
+          <include name="gotoAcc"/>
+          <include name="afterMethod"/>
+          <include name="createPOMobjects"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- temptest.AmazonTng2 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

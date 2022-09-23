@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="classes">
+  <test name="ChromeTest">
+    <parameter name="browser" value="Chrome"/>
+
+    <classes>
+      <class name="temptest.FbTestng"/>
+      <class name="temptest.FbTestng2"/>
+	  <class name="temptest.FbTestng3"/>
+
+    </classes>
+  </test> <!-- Test -->
+    <test name="FirefoxTest">
+    <parameter name="browser" value="Firefox"/>
+
+    <classes>
+      <class name="temptest.FbTestng"/>
+      <class name="temptest.FbTestng2"/>
+	  <class name="temptest.FbTestng3"/>
+
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

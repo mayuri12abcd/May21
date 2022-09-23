@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="temptest.FbTestng3">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openBulletins"/>
+          <include name="fillLoginDetails"/>
+          <include name="cleanPOMobjects"/>
+          <include name="createPOMobjects"/>
+          <include name="logoutapplication"/>
+        </methods>
+      </class> <!-- temptest.FbTestng3 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="temptest.FbTestng2">
+        <methods>
+          <include name="sendKeysInPassword"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="launchBrowser"/>
+          <include name="sendkeyInEmail"/>
+          <include name="cleanPOMobjects"/>
+          <include name="openServices1"/>
+          <include name="createPOMobjects"/>
+        </methods>
+      </class> <!-- temptest.FbTestng2 -->
+      <class name="temptest.FbTestng">
+        <methods>
+          <include name="cleanPOMobjects"/>
+          <include name="verifyGoBackToMessenger"/>
+          <include name="closeBrowser"/>
+          <include name="openRoomsPage"/>
+          <include name="launchBrowser"/>
+          <include name="logOutfromApplication"/>
+          <include name="createPOMobjects"/>
+          <include name="verifyVisitOurHelpCentre"/>
+        </methods>
+      </class> <!-- temptest.FbTestng -->
+      <class name="temptest.FbTestng3">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openBulletins"/>
+          <include name="fillLoginDetails"/>
+          <include name="cleanPOMobjects"/>
+          <include name="createPOMobjects"/>
+          <include name="logoutapplication"/>
+        </methods>
+      </class> <!-- temptest.FbTestng3 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
